@@ -25,6 +25,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".src.main.SignUpActivity" />
+        <activity android:name=".src.main.LogInActivity" />
+        <activity android:name=".src.main.ConsentActivity" />
+
 
     </application>
 

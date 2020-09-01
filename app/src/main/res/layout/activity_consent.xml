@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bk">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="80dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></View>
+        <ImageView
+            android:src="@drawable/bt_ok"
+            android:onClick="consentOnClick"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_agree_consent">
+        </ImageView>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></View>
+        <ImageView
+            android:src="@drawable/bt_cancel"
+            android:onClick="consentOnClick"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_cancel_consent">
+        </ImageView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></View>
+    </LinearLayout>
+
+
+</FrameLayout>

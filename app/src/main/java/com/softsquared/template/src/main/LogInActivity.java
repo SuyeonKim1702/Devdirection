@@ -4,42 +4,38 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.annotation.Nullable;
-
 import com.softsquared.template.R;
 import com.softsquared.template.src.BaseActivity;
 import com.softsquared.template.src.common.view.SimpleMessageDialog;
 import com.softsquared.template.src.common.view.TwoChoiceDialog;
 import com.softsquared.template.src.main.interfaces.MainActivityView;
 
-public class SignUpActivity extends BaseActivity implements MainActivityView {
+public class LogInActivity extends BaseActivity implements MainActivityView {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
-    }
-
-    private void tryGetTest() {
-        showProgressDialog();
-
-        final WelcomeService welcomeService = new WelcomeService(this);
-        welcomeService.getTest();
+        setContentView(R.layout.activity_login);
     }
 
     @Override
     public void validateSuccess(String text) {
-        hideProgressDialog();
-        showCustomToast(text);
+
     }
 
     @Override
-    public void validateFailure(@Nullable String message) {
-        hideProgressDialog();
-        showCustomToast(message == null || message.isEmpty() ? getString(R.string.network_error) : message);
+    public void validateFailure(String message) {
+
     }
 
     public void customOnClick(View view) {
+        switch (view.getId()) {
+            case R.id.iv_connect_logIn:
+                Intent intent = new Intent(LogInActivity.this, ConsentActivity.class);
+                startActivity(intent);
+                finish();
+                break;
 
+        }
     }
 }

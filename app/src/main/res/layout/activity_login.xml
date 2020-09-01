@@ -15,5 +15,17 @@
             android:scaleType="centerCrop"
             android:src="@drawable/login_bg"></ImageView>
     </LinearLayout>
+    <ImageView
+        android:layout_gravity="bottom"
+        android:id="@+id/iv_connect_logIn"
+        android:onClick="customOnClick"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bt_github_connet">
+    </ImageView>
 
 </RelativeLayout>

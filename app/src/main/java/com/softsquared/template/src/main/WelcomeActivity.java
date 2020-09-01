@@ -42,7 +42,7 @@ public class WelcomeActivity extends BaseActivity implements MainActivityView {
 
         switch (view.getId()) {
             case R.id.iv_ok_welcome:
-                Intent intent = new Intent(WelcomeActivity.this, SignUpActivity.class);
+                Intent intent = new Intent(WelcomeActivity.this, LogInActivity.class);
                 startActivity(intent);
                 finish();
                 break;
