@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.0"
+
     defaultConfig {
         applicationId "com.softsquared.template"
         minSdkVersion 21
@@ -23,6 +24,8 @@ android {
     }
 }
 
+
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
@@ -33,6 +36,10 @@ dependencies {
 
     // https://github.com/square/okhttp
     implementation("com.squareup.okhttp3:okhttp:4.0.1")
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
     // https://github.com/square/retrofit/tree/master/retrofit-converters/gson
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'

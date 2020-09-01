@@ -2,9 +2,12 @@ package com.softsquared.template.src.main;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 
+import com.bumptech.glide.Glide;
 import com.softsquared.template.R;
 import com.softsquared.template.src.BaseActivity;
 import com.softsquared.template.src.common.view.SimpleMessageDialog;
@@ -13,10 +16,20 @@ import com.softsquared.template.src.main.interfaces.MainActivityView;
 
 public class SignUpActivity extends BaseActivity implements MainActivityView {
 
+
+    FrameLayout flLoading;
+    ImageView ivLoadingAnim;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+        flLoading = findViewById(R.id.bg_loading);
+        ivLoadingAnim = findViewById(R.id.anim_loading);
+
+        Glide.with(this).load(R.raw.anim_loading).into(ivLoadingAnim);
+
+
     }
 
     private void tryGetTest() {
@@ -40,6 +53,10 @@ public class SignUpActivity extends BaseActivity implements MainActivityView {
 
     public void customOnClick(View view) {
         switch (view.getId()) {
+            case R.id.iv_complete:
+                flLoading.setVisibility(View.VISIBLE);
+
+                break;
             case R.id.main_activity_btn_api_test:
                 tryGetTest();
                 break;
