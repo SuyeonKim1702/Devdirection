@@ -1,11 +1,7 @@
 package com.softsquared.template.src.main;
 
-import android.app.Dialog;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
@@ -15,19 +11,19 @@ import com.softsquared.template.src.common.view.SimpleMessageDialog;
 import com.softsquared.template.src.common.view.TwoChoiceDialog;
 import com.softsquared.template.src.main.interfaces.MainActivityView;
 
-public class MainActivity extends BaseActivity implements MainActivityView {
+public class SignUpActivity extends BaseActivity implements MainActivityView {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
+        setContentView(R.layout.activity_sign_up);
     }
 
     private void tryGetTest() {
         showProgressDialog();
 
-        final MainService mainService = new MainService(this);
-        mainService.getTest();
+        final WelcomeService welcomeService = new WelcomeService(this);
+        welcomeService.getTest();
     }
 
     @Override

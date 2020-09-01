@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f7fcff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/fontstyle2"
+                android:text="DEV PLANET"
+                android:textColor="@color/colorPrimary"
+                android:textSize="36sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/fontstyle"
+                android:lineSpacingExtra="-2sp"
+                android:text="자신의 프로젝트들을 분석하고 적합한 커리어를 쌓아보세요"
+                android:textColor="#78909c"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4sp"
+                    android:text="이름"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="이름을 적어주세요"
+                    android:inputType="text"
+                    android:paddingStart="9dp"
+                    android:paddingBottom="20dp"
+                    android:textColor="#78909C"
+                    android:textColorHint="#78909c"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4sp"
+                    android:text="생년월일"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="YYYYMMDD"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="9dp"
+                    android:paddingBottom="20dp"
+                    android:textColor="#78909C"
+                    android:textColorHint="#78909c"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4sp"
+                    android:text="휴대폰"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="휴대폰 번호 입력"
+                    android:inputType="phone"
+                    android:paddingStart="9dp"
+                    android:paddingBottom="20dp"
+                    android:textColor="#78909C"
+                    android:textColorHint="#78909c"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="52dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4sp"
+                    android:text="관심분야"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:columnCount="2"
+
+                    >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="서버"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="웹 퍼블리셔"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="프론트엔드"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="자바"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="안드로이드"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="iOS"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="데이터 마이닝"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="DevOps"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="머신러닝"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="블록체인"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="보안"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="임베디드"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="데이터 사이언스"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="알고리즘"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                </GridLayout>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bt_complete"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

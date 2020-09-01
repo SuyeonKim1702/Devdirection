@@ -10,10 +10,10 @@ import retrofit2.Response;
 
 import static com.softsquared.template.src.ApplicationClass.getRetrofit;
 
-class MainService {
+class WelcomeService {
     private final MainActivityView mMainActivityView;
 
-    MainService(final MainActivityView mainActivityView) {
+    WelcomeService(final MainActivityView mainActivityView) {
         this.mMainActivityView = mainActivityView;
     }
 
