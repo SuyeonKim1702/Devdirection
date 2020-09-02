@@ -331,6 +331,8 @@
 
             </LinearLayout>
             <ImageView
+                android:onClick="signUpOnClick"
+                android:id="@+id/iv_complete_sign_up"
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="50dp"
                 android:layout_gravity="center_horizontal"

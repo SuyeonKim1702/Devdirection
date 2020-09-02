@@ -39,7 +39,13 @@ public class SignUpActivity extends BaseActivity implements MainActivityView {
         showCustomToast(message == null || message.isEmpty() ? getString(R.string.network_error) : message);
     }
 
-    public void customOnClick(View view) {
-
+    public void signUpOnClick(View view) {
+        switch (view.getId()) {
+            case R.id.iv_complete_sign_up:
+                Intent intent = new Intent(SignUpActivity.this, ReportActivity.class);
+                startActivity(intent);
+                finish();
+                break;
+        }
     }
 }
