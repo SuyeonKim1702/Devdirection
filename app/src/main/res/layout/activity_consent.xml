@@ -6,16 +6,17 @@
 
 
     <ImageView
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/bk">
+        android:src="@drawable/bk_consent">
     </ImageView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="100dp"
         android:orientation="horizontal">
         <View
             android:layout_width="0dp"
@@ -24,7 +25,7 @@
         <ImageView
             android:src="@drawable/bt_ok"
             android:onClick="consentOnClick"
-            android:layout_width="150dp"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:id="@+id/iv_agree_consent">
         </ImageView>
@@ -34,7 +35,7 @@
         <ImageView
             android:src="@drawable/bt_cancel"
             android:onClick="consentOnClick"
-            android:layout_width="150dp"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:id="@+id/iv_cancel_consent">
         </ImageView>

@@ -13,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/login_bg"></ImageView>
+            android:src="@drawable/bk_login"></ImageView>
     </LinearLayout>
     <ImageView
         android:layout_gravity="bottom"
@@ -23,7 +23,7 @@
         android:layout_marginEnd="30dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="100dp"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:src="@drawable/bt_github_connet">
     </ImageView>

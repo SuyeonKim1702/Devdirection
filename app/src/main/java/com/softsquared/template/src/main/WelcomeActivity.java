@@ -3,9 +3,11 @@ package com.softsquared.template.src.main;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 
+import com.bumptech.glide.Glide;
 import com.softsquared.template.R;
 import com.softsquared.template.src.BaseActivity;
 import com.softsquared.template.src.common.view.SimpleMessageDialog;
@@ -14,10 +16,14 @@ import com.softsquared.template.src.main.interfaces.MainActivityView;
 
 public class WelcomeActivity extends BaseActivity implements MainActivityView {
 
+    ImageView welcomeAnim;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+        welcomeAnim = findViewById(R.id.iv_welcome_anim);
+        Glide.with(this).load(R.raw.search).into(welcomeAnim);
     }
 
     private void tryGetTest() {

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="-20dp"
+        android:src="@drawable/download"></ImageView>
+    <ImageView
+        android:id="@+id/goBack"
+        android:onClick="downloadOnClick"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"></ImageView>
+    <ImageView
+        android:id="@+id/bt_download"
+        android:onClick="downloadOnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="285dp"
+        android:src="@drawable/bt_download"></ImageView>
+    <ImageView
+        android:id="@+id/bt_email"
+        android:onClick="downloadOnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="200dp"
+        android:src="@drawable/bt_email"></ImageView>
+    <ImageView
+        android:id="@+id/bt_share"
+        android:onClick="downloadOnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="115dp"
+        android:src="@drawable/bt_file"></ImageView>
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/checkcheck"
+        android:layout_marginBottom="291dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginEnd="55dp"
+        android:id="@+id/check_download"></ImageView>
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/checkcheck"
+        android:layout_marginBottom="208dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginEnd="55dp"
+        android:id="@+id/check_email"></ImageView>
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/checkcheck"
+        android:layout_marginBottom="123dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginEnd="55dp"
+        android:id="@+id/check_share"></ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="190dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:onClick="downloadOnClick"
+            android:id="@+id/pdf"
+            android:layout_width="109dp"
+            android:layout_height="44dp"
+            android:src="@drawable/bt_pdf"></ImageView>
+        <ImageView
+            android:onClick="downloadOnClick"
+            android:id="@+id/csv"
+            android:layout_width="111dp"
+            android:layout_height="44dp"
+            android:src="@drawable/bt_csv"></ImageView>
+        <ImageView
+            android:onClick="downloadOnClick"
+            android:id="@+id/excel"
+            android:layout_width="120dp"
+            android:layout_height="44dp"
+
+            android:src="@drawable/bt_excel"></ImageView>
+
+
+    </LinearLayout>
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bt_check_fill"
+        android:layout_marginEnd="29dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="201dp"
+        android:id="@+id/check_csv_fill"></ImageView>
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bt_check_fill"
+        android:layout_marginEnd="114dp"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="201dp"
+        android:id="@+id/check_excel_fill"></ImageView>
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bt_check_fill"
+        android:layout_marginStart="49dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="201dp"
+        android:id="@+id/check_pdf_fill"></ImageView>
+
+</FrameLayout>

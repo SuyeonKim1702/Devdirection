@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:background="#f7fcff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginEnd="-17dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-230dp"
+                android:layout_marginBottom="-350dp"
+                android:src="@drawable/minsoo"></ImageView>
+
+
+            <ImageView
+                android:id="@+id/go_to_recommend_minsoo"
+                android:onClick="reportResultOnClick"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bt_go_to_recommend">
+            </ImageView>
+            <ImageView
+                android:onClick="reportResultOnClick"
+                android:id="@+id/iv_download_minsoo"
+                android:layout_marginTop="220dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bt_download1"
+                android:layout_gravity="center_horizontal">
+            </ImageView>
+
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>

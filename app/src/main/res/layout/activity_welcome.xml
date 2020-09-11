@@ -2,14 +2,18 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f6fbfb"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
     <ImageView
-        android:scaleType="centerInside"
-        android:id="@+id/iv_background_welcome"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/back_explain">
-    </ImageView>
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="210dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_welcome_anim"></ImageView>
 
     <ImageView
         android:layout_gravity="bottom"
@@ -22,6 +26,12 @@
         android:layout_height="wrap_content"
         android:src="@drawable/bt_ok">
     </ImageView>
+    <ImageView
+        android:layout_marginBottom="170dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/devrection"></ImageView>
 
 
 </FrameLayout>

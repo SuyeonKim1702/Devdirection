@@ -5,8 +5,12 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <application
+
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:name=".src.ApplicationClass"
         android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
@@ -17,17 +21,36 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning"
         tools:targetApi="n">
-        <activity android:name=".src.main.WelcomeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.softsquared.template.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+        <activity android:name=".src.main.WelcomeActivity"/>
         <activity android:name=".src.main.SignUpActivity" />
         <activity android:name=".src.main.LogInActivity" />
         <activity android:name=".src.main.ConsentActivity" />
         <activity android:name=".src.main.ReportActivity" />
+        <activity android:name=".src.main.Report2Activity" />
+        <activity android:name=".src.main.MonthActivity" />
+        <activity android:name=".src.main.DownloadActivity" />
+        <activity android:name=".src.main.ReportResultActivity" />
+        <activity android:name=".src.main.ReportResult2Activity" />
+        <activity android:name=".src.main.ReportRecommendActivity"/>
+        <activity android:name=".src.main.ReportRecommend2Activity"/>
+        <activity android:name=".src.main.SplashActivity">
+
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
 
 
 
